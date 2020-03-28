@@ -25,6 +25,11 @@ function App(props) {
   );
 }
 
+/**
+ * 
+ * @param {*} state 
+ * For mapping the State with Props
+ */
 const mapStateToProps  = state =>{
   return {
     person:state.person,
@@ -33,6 +38,11 @@ const mapStateToProps  = state =>{
   }
 } 
 
+/**
+ * 
+ * @param {*} dispatch 
+ * For mapping the Dispatch with Props
+ */
 const mapDispatchToProps = dispatch =>{
   return {
     updatePerson: ()=>{dispatch(update_person)},
