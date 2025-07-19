@@ -47,7 +47,7 @@ const mapDispatchToProps = dispatch =>{
   return {
     updatePerson: ()=>{dispatch(update_person)},
     updateGame: ()=>{dispatch(update_game)},
-    fetchUsers: () =>{dispatch(fetch_user)}
+    fetchUsers: () =>{dispatch(fetch_user())}
   }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(App);
